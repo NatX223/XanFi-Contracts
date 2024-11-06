@@ -18,7 +18,7 @@ async function main() {
     const usdcAmount = 10 * (10 ** 6);
     const tokenAmount = ethers.parseEther("1");
     const usdc = Token.attach(usdcToken.address);
-    for (let i = 3; i < 8; i++) {
+    for (let i = 1; i < tokenAddresses.length; i++) {
       const tokenAddress = tokenAddresses[i].address;
       
       const token = Token.attach(tokenAddress);
